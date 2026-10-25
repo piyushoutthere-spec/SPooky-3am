@@ -61,3 +61,16 @@ p{
     font-size:25px;
     line-height: 2;
 }
+
+/*The intro vid fills screen*/
+#introscene{
+    position: fixed;
+    inset:0;
+    z-index: 10;
+}
+
+#introvid{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}

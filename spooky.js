@@ -1,3 +1,12 @@
+const introscene=document.getElementById("introscene");
+const introvid = document.getElementById("introvid");
+
+// shows the main web after intro vid
+setTimeout(() => {
+    introscene.hidden=true;
+}, 5000);
+
+
 const ghosts = document.querySelectorAll(".ghost");
 const selectscreen = document.getElementById("ghost-select");
 const msgscreen = document.getElementById("msg-screen");
