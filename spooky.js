@@ -12,6 +12,7 @@ const selectscreen = document.getElementById("ghost-select");
 const msgscreen = document.getElementById("msg-screen");
 const GHtitle = document.getElementById("GH-title");
 const GHmsg = document.getElementById("GH-msg");
+const finalscreen=document.getElementById("finalmsg");
 
 // Each ghost has its own story and mesg.
 
@@ -40,5 +41,9 @@ ghosts.forEach((ghosts,index) => {
         creepy.play().catch(() => {
             console.log("Audio playback was blocked");
         });
+         setTimeout(() => {
+            msgscreen.hidden=true;
+            finalscreen.hidden=false;
+        }, 5000);   
     });
 });

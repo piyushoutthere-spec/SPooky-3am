@@ -74,3 +74,24 @@ p{
     height:100%;
     object-fit: cover;
 }
+
+/*Final screen text*/
+#finalmsg{
+    opacity: 0;
+    animation: reveal-message 2s ease forwards;
+}
+
+#finalmsg p {
+    font-family:"Special Elite",monospace;
+    font-size:25px;
+    line-height:2;
+}
+
+@keyframes reveal-message {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
