@@ -47,3 +47,17 @@ h1 {
 p{
     font-size:20px;
 }
+
+/*hiding elements*/
+[hidden] {
+    display: none !important;
+}
+
+#msg-screen {
+    padding:60px 20px;
+}
+
+#GH-msg{
+    font-size:25px;
+    line-height: 2;
+}
