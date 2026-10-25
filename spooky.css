@@ -16,6 +16,28 @@ main{
     padding:50px 20px;
 }
 
+/*Layout for 6 ghost pic*/
+#ghost-select {
+    display:grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap:20px;
+    max-width:800px;
+    margin:30px auto;
+}
+
+.ghost {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height:200px;
+}
+
+.ghost img{
+    width:100%;
+    max-width: 200px;
+    height:220px;
+}
+
 /*horror style h1*/
 h1 {
     font-family:"Creepster",cursive;
