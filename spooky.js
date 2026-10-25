@@ -1,11 +1,11 @@
 const introscene=document.getElementById("introscene");
 const introvid = document.getElementById("introvid");
+const creepy=document.getElementById("creepy");
 
 // shows the main web after intro vid
 setTimeout(() => {
     introscene.hidden=true;
 }, 5000);
-
 
 const ghosts = document.querySelectorAll(".ghost");
 const selectscreen = document.getElementById("ghost-select");
@@ -33,5 +33,12 @@ ghosts.forEach((ghosts,index) => {
 
         GHtitle.textContent=`ghost${index+1}`;
         GHmsg.textContent=GHmsgs[index];
+
+        //The sound should start each time a ghost is clicked
+        creepy.currentTime=0;
+
+        creepy.play().catch(() => {
+            console.log("Audio playback was blocked");
+        });
     });
 });
