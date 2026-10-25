@@ -1,10 +1,12 @@
 const introscene=document.getElementById("introscene");
 const introvid = document.getElementById("introvid");
+const maincontent=document.getElementById("maincontent")
 const creepy=document.getElementById("creepy");
 
 // shows the main web after intro vid
 setTimeout(() => {
     introscene.hidden=true;
+    maincontent.hidden=false;
 }, 5000);
 
 const ghosts = document.querySelectorAll(".ghost");
