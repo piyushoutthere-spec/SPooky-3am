@@ -19,7 +19,7 @@ const finalscreen=document.getElementById("finalmsg");
 // Each ghost has its own story and mesg.
 
 const GHmsgs = [
-    "You should have not choosen me",
+    "You should have not choosen me lad",
     "I have been w8ing for a meal",
     "Did u hear smtg bad behind u",
     "This place knows and remeberes everything",

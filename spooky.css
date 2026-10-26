@@ -4,9 +4,29 @@ body{
     margin:0;
     min-height: 100vh;
     background-color:black;
-    background-image:url("assets/bbg.png");
-    background-position: center;
-    background-size:cover;
+    background-image:url("assets/Happy\ Holidays.gif"),
+                     url("assets/Happy\ Holidays.gif"),
+                     url("assets/Happy\ Holidays.gif"),
+                     url("assets/Happy\ Holidays.gif"),
+                     url("assets/Happy\ Holidays.gif"),
+                     url("assets/Happy\ Holidays.gif"),
+                     url("assets/bbg.png");
+    background-position:  left 10px top 5%,
+                        left 10px center,
+                        left 10px bottom 5%,
+                        right 10px top 5%,
+                        right 10px center,
+                        right 10px bottom 5%,
+                        center;
+    background-size:200px auto,
+                    200px auto,
+                    200px,
+                    200px,
+                    200px,
+                    200px,
+                    cover;
+    background-repeat: no-repeat;                
+
     color:white;
     text-align:center;
     font-family:"Special Elite",monospace;
@@ -81,37 +101,7 @@ p{
     height: auto;
 }
 
-/*left side*/
-.giflefttop{
-    top:5%;
-    left:10px;
-}
 
-.gifleftmiddle{
-    top:40%;
-    left:10px;
-}
-
-.gifleftbottom{
-    top:5%;
-    left:10px;
-}
-
-/*right side*/
-.gifrighttop{
-    top:5%;
-    right:10px;
-}
-
-.gifrightmiddle{
-    top:40%;
-    right:10px;
-}
-
-.gifrightbottom{
-    bottom:5%;
-    right:10px;
-}
 
 /*The intro vid fills screen*/
 #introscene{
@@ -130,6 +120,10 @@ p{
 #finalmsg{
     opacity: 0;
     animation: reveal-message 2s ease forwards;
+    background: black;
+    z-index: 20;
+    inset:0;
+    position: fixed;
 }
 
 #finalmsg p {
