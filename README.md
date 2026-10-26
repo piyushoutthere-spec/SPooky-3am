@@ -14,7 +14,7 @@ ghost which tells you its experience and the warning and fears you. You also get
 
 ### Installing and executing 
 - Please click the live link below and it open in your browser. No need to install anything!
--
+- https://piyushoutthere-spec.github.io/SPooky-3am/
 
 ## Tech stacks
 - I used HTML , CSS , JavaScript to make this project
