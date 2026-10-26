@@ -29,12 +29,21 @@ const GHmsgs = [
 
 // Clicking any ghost image should display the message
 
+const GHnames = [
+    "The Forgotten one",
+    "The Hollow eater",
+    "The whisperer",
+    "The memory keeper",
+    "The silent stalker",
+    "The Last warning"
+];
+
 ghosts.forEach((ghosts,index) => {
     ghosts.addEventListener("click",()=>{
         selectscreen.hidden=true;
         msgscreen.hidden=false;
 
-        GHtitle.textContent=`ghost${index+1}`;
+        GHtitle.textContent=GHnames[index];
         GHmsg.textContent=GHmsgs[index];
 
         //The sound should start each time a ghost is clicked
@@ -46,6 +55,13 @@ ghosts.forEach((ghosts,index) => {
          setTimeout(() => {
             msgscreen.hidden=true;
             finalscreen.hidden=false;
-        }, 9000);   
+
+            //stop the music after 2seconds after the final msg
+            setTimeout(() => {
+                creepy.pause();
+                creepy.currentTime=0;
+            },3000);
+
+        }, 10000);   
     });
 });

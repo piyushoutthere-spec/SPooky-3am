@@ -83,9 +83,9 @@ p{
 }
 
 #GH-msg{
-    max-width: 500px;
+    max-width: 550px;
     margin: 25px auto;
-    font-size:25px;
+    font-size:30px;
     line-height: 2;
     text-align: center;
     font-family: "Creepster",cursive;
@@ -131,9 +131,10 @@ p{
 }
 
 #finalmsg p {
-    font-family:"Special Elite",monospace;
-    font-size:25px;
+    font-family:"Creepster",cursive;
+    font-size:60px;
     line-height:2;
+    color:darkred;
 }
 
 @keyframes reveal-message {
